@@ -51,3 +51,13 @@ h2, h3 {
 p {
 	font-size: 20px;
 }
+.button-container form,
+.button-container form div {
+	padding: 2px;
+    display: inline;
+}
+
+.button-container button {
+    display: inline;
+    vertical-align: middle;
+}

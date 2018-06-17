@@ -43,10 +43,22 @@
 	</mat-list>
   </mat-card-content>
   <mat-card-actions>
-	<form action="cgi-bin/save.cgi" method="post">
+  <div class="button-container">
+	<form action="cgi-bin/test.sh" method="post">
+	<div>
     <button mat-button type="submit" value="call">Ping All Hosts</button>
+	</div>
 	</form>
+	<form action="cgi-bin/test.sh" method="post">
+	<div>
 	<button mat-button>See All Playbooks</button>
+	</div>
+	</form>
+	<form action="cgi-bin/test.sh" method="post">
+	<div>
 	<button mat-button>Add A new Host</button>
+	</div>
+	</form>
+   </div>	
   </mat-card-actions>
 </mat-card>
