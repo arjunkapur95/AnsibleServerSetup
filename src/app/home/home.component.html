@@ -43,7 +43,9 @@
 	</mat-list>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button onclick="cgi-bin/test.sh">Ping All Hosts</button>
+	<form action="cgi-bin/save.cgi" method="post">
+    <button mat-button type="submit" value="call">Ping All Hosts</button>
+	</form>
 	<button mat-button>See All Playbooks</button>
 	<button mat-button>Add A new Host</button>
   </mat-card-actions>
