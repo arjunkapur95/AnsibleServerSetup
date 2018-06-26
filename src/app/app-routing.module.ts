@@ -4,12 +4,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppComponent } from './app.component';
 import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { HomeComponent } from './home/home.component';
+import { DiscoveryAgentComponent } from './discovery-agent/discovery-agent.component';
+
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'dashboard1', component: Dashboard1Component }
+  { path: 'dashboard1', component: Dashboard1Component },
+   { path: 'discoveryagent', component: DiscoveryAgentComponent }
   
 ];
 

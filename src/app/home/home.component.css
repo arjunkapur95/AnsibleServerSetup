@@ -9,14 +9,17 @@
   background-color:#ffffff;
 }
 .example-card {
+  position: relative;
   width :60%;
-  height :70%;
+  height :60%;
   margin-top: 50px;
-  top: 20%;
+  margin-bottom: 50px;
   left: 10%;
+  bottom: 40%;
   float:left;
   background-color:#ffffff;
   color: #000000;
+ 
 }
 
 .example-header-image {
@@ -26,8 +29,8 @@ mat-grid-tile {
   background: lightblue;
 }
 
-.test{
-  background: red;
+.matcard1{
+ margin-top: 50px;
 }
 .title{
  

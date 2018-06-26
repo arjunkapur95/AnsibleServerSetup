@@ -1,3 +1,41 @@
-<p>
-  dashboard works!
-</p>
+
+<div class="container" fxLayout="row" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
+
+<div fxFlex="50%">
+<mat-card class="test">
+<mat-tab-group dynamicHeight>
+  <mat-tab label="Hosts"> 
+	<mat-list>
+  <h3 mat-subheader>Hosts</h3>
+  <mat-list-item *ngFor="let host of hosts">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>{{host.name}}</h4>
+    <p mat-line> {{host.ip}} </p>
+  </mat-list-item>
+   </mat-list>
+  </mat-tab>
+  <mat-tab label="Playbooks">
+  <mat-list>
+  <h3 mat-subheader>Playbooks</h3>
+  <mat-list-item *ngFor="let playbook of playbooks">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>{{playbook.name}}</h4>
+    <p mat-line> {{playbook.description}} </p>
+  </mat-list-item>
+   </mat-list>
+  </mat-tab>
+  <mat-tab label="Software Installed">
+	
+			<mat-form-field>
+				<mat-select placeholder="List Of Software Installed">
+				<mat-option *ngFor="let software of Softwares" [value]="software.value">
+				{{ software.viewValue }}
+				</mat-option>
+				</mat-select>
+			</mat-form-field>
+	
+  </mat-tab>
+</mat-tab-group>
+</mat-card>
+</div>
+</div>

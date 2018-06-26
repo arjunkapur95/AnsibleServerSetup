@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatSnackBar} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,4 @@ import {MatSnackBar} from '@angular/material';
 export class HomeComponent {
 	 constructor(public snackBar: MatSnackBar) {}
 
-  
 }

@@ -1,3 +1,19 @@
-<p>
-  dashboard1 works!
-</p>
+<div class="container" fxLayout="row" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
+<div fxFlex="50%">
+<div class="example-container">
+<mat-card>
+<form action="cgi-bin/test2.sh" class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter Host Name" name="hostname">
+  </mat-form-field>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">See All Playbooks</button>
+</form>
+</mat-card>
+</div>
+</div>
