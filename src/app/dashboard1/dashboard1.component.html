@@ -1,19 +1,120 @@
 <div class="container" fxLayout="row" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
-<div fxFlex="50%">
-<div class="example-container">
-<mat-card>
-<form action="cgi-bin/test2.sh" class="example-form" method="post">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Enter Host Name" name="hostname">
-  </mat-form-field>
+<div fxFlex="50%" >
+
+<mat-card class="matcard1">
+<mat-tab-group dynamicHeight>
+<mat-tab label="Jenkins">
+<h4 mat-subheader>Playbook to Install Jenkins</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-jenkins"></div>
+<mat-card-title>Install Jenkins</mat-card-title>
+<mat-card-subtitle>Enter HostName and Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/jenkin.sh" class="example-form" method="post">
+  <select class="display" name="hostname">
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
  
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
 	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
   </mat-form-field>
   
-  <button mat-raised-button color="primary" type="submit" value="call">See All Playbooks</button>
+  <button mat-raised-button color="primary" type="submit" value="call">	Install Jenkins</button>
 </form>
+</mat-card-content>
 </mat-card>
-</div>
+</mat-tab>
+
+<mat-tab label="GoCd">
+<h4 mat-subheader>Playbook to Install GoCd</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-gocd"></div>
+<mat-card-title>Install GoCd</mat-card-title>
+<mat-card-subtitle>Enter HostName and Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/gocd.sh" class="example-form" method="post">
+  <select class="display" name="hostname">
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">	Install GoCd</button>
+</form>
+</mat-card-content>
+</mat-card>
+</mat-tab>
+
+<mat-tab label="Puppet">
+<h4 mat-subheader>Playbook to Install Puppet</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-puppet"></div>
+<mat-card-title>Install Puppet</mat-card-title>
+<mat-card-subtitle>Choose HostName and Enter Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/puppet.sh" class="example-form" method="post">
+   <select class="display" name="hostname">
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">	Install Puppet</button>
+</form>
+</mat-card-content>
+</mat-card>
+</mat-tab>
+
+<mat-tab label="Bamboo">
+<h4 mat-subheader>Playbook to Install Bamboo</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-bamboo"></div>
+<mat-card-title>Install Bamboo</mat-card-title>
+<mat-card-subtitle>Enter HostName and Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/bamboo.sh" class="example-form" method="post">
+   <select class="display" name="hostname">
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">	Install Bamboo</button>
+</form>
+</mat-card-content>
+</mat-card>
+</mat-tab>
+</mat-tab-group>
+</mat-card>
+
 </div>

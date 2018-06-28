@@ -5,33 +5,47 @@
 <mat-card class="matcard1"> 
     <mat-tab-group dynamicHeight>
 	<mat-tab label="Hosts">
-	 <h4 mat-subheader>Hosts : Please Select Host File Generated On Machine</h4>
-	
-		
-		<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
-		<button mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
-		<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
-		
-	
+		<h4 mat-subheader>Hosts : Please Select Host File Generated On Machine</h4>
+		<mat-divider></mat-divider>
+			<div class="container" fxLayout="column" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
+				<div fxFlex="60%">
+					<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
+				</div>
+			
+				<div fxFlex="20%">
+					<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
+					<button class="matbutton" mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
+				</div>
+			</div>
 	</mat-tab>
 	<mat-tab label="Playbooks">
 		<h4 mat-subheader>Playbooks : Please Select Playbooks File Generated On Machine</h4>
-	
-		
-		<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
-		<button mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
-		<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
-		
+		 <mat-divider></mat-divider>
+		<div class="container" fxLayout="column" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
+			<div fxFlex="60%">
+				<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
+			</div>
+			
+			<div fxFlex="20%">
+				<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
+				<button class="matbutton" mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
+			</div>
+		</div>
 	
 	</mat-tab>
 	<mat-tab label="PortsOpen">
-	<h4 mat-subheader>Ports : Please Select Ports File Generated On Machine</h4>
-	
-		
-		<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
-		<button mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
-		<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
-		
+		<h4 mat-subheader>Ports : Please Select Ports File Generated On Machine</h4>
+		<mat-divider></mat-divider>
+			<div class="container" fxLayout="column" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
+				<div fxFlex="60%">
+					<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
+				</div>
+			
+				<div fxFlex="20%">
+					<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
+					<button class="matbutton" mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
+				</div>
+			</div>
 	</mat-tab>
 	</mat-tab-group>
 </mat-card>

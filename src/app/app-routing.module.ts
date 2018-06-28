@@ -9,10 +9,11 @@ import { DiscoveryAgentComponent } from './discovery-agent/discovery-agent.compo
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'dashboard1', component: Dashboard1Component },
-   { path: 'discoveryagent', component: DiscoveryAgentComponent }
+  { path: 'discoveryagent', component: DiscoveryAgentComponent }
   
 ];
 
