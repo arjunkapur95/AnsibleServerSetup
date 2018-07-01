@@ -23,12 +23,12 @@
 		 <mat-divider></mat-divider>
 		<div class="container" fxLayout="column" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
 			<div fxFlex="60%">
-				<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
+				<textarea class="textarea" autofocus readonly >{{fileText1}}</textarea>
 			</div>
 			
 			<div fxFlex="20%">
-				<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
-				<button class="matbutton" mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
+				<input #file1 type="file" [hidden]="true" accept=".txt" (change)="fileUpload1($event)">
+				<button class="matbutton" mat-raised-button color="primary" #upload (click)="file1.click()">Choose Hosts File</button>
 			</div>
 		</div>
 	
@@ -38,12 +38,12 @@
 		<mat-divider></mat-divider>
 			<div class="container" fxLayout="column" fxLayoutWrap fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign ="center">
 				<div fxFlex="60%">
-					<textarea class="textarea" autofocus readonly >{{fileText}}</textarea>
+					<textarea class="textarea" autofocus readonly >{{fileText2}}</textarea>
 				</div>
 			
 				<div fxFlex="20%">
-					<input #file type="file" [hidden]="true" accept=".txt" (change)="fileUpload($event)">
-					<button class="matbutton" mat-raised-button color="primary" #upload (click)="file.click()">Choose Hosts File</button>
+					<input #file2 type="file" [hidden]="true" accept=".txt" (change)="fileUpload2($event)">
+					<button class="matbutton" mat-raised-button color="primary" #upload (click)="file2.click()">Choose Hosts File</button>
 				</div>
 			</div>
 	</mat-tab>
