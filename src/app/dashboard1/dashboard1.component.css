@@ -50,6 +50,22 @@ input.example-right-align {
   background-image: url('https://puppet.com/themes/hoverboard/images/puppet-logo/puppet-logo-amber-white-lg.png');
   background-size: cover;
 }
+.example-header-image-appium {
+  background-image: url('https://www.zaizi.com/sites/default/files/appium_banner.png');
+  background-size: cover;
+}
+.example-header-image-selenium {
+  background-image: url('https://huddle.eurostarsoftwaretesting.com/wp-content/uploads/2017/02/Selenium-750x330.jpg');
+  background-size: cover;
+}
+.example-header-image-cucumber {
+ background-image: url('https://avatars.githubusercontent.com/u/5459659?');
+ background-size: cover;
+}
+.example-header-image-fitnesse {
+ background-image: url('https://camo.githubusercontent.com/87cccfa246f5909edeb62e2a7197cd24caa34b9a/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3937373332302f313839373934312f35393935393765322d376330332d313165332d393464332d3764656332336339366261662e706e67');
+ background-size: cover;
+}
 .display {
   width: 80%;
 

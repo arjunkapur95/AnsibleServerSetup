@@ -1,16 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface Software {
+  name: String;
+}
+
 @Component({
   selector: 'app-discovery-agent',
   templateUrl: './discovery-agent.component.html',
   styleUrls: ['./discovery-agent.component.css']
 })
 export class DiscoveryAgentComponent implements OnInit {
+  displayedColumns: String[] = ['NAME'];
 
   private fileText;
   private fileText1;
   private fileText2;
- 
+  private software:Software[] = [];
   constructor() { }
  
   ngOnInit() { }
@@ -22,6 +27,14 @@ export class DiscoveryAgentComponent implements OnInit {
     var me = this;
     reader.onload = function () {
       me.fileText = reader.result;
+	  var splitted =me.fileText.split("\n");
+	  console.log(splitted.length);
+	  var arr_names:Software[] = new Array(splitted.length); 
+	  for(var i=0;i<splitted.length;i++)
+	  {
+		arr_names[i]=splitted[i];
+	  }
+	  
     }
 	
 	}
@@ -45,5 +58,4 @@ export class DiscoveryAgentComponent implements OnInit {
     }
 	
 	}
-
 }
