@@ -209,15 +209,71 @@
 </mat-card>
 </mat-tab>
 <mat-tab label="Fitnesse">
-<h4 mat-subheader>Playbook For Installing Cucumber</h4>
+<h4 mat-subheader>Playbook For Installing Fitnesse</h4>
 <mat-card class="example-container" >
 <mat-card-header>
 <div mat-card-avatar class="example-header-image-fitnesse"></div>
-<mat-card-title>Install Cucumber</mat-card-title>
+<mat-card-title>Install Fitnesse</mat-card-title>
 <mat-card-subtitle>Choose HostName and Root password for host machine</mat-card-subtitle>
 </mat-card-header>
 <mat-card-content>
 <form action="cgi-bin/fitnese.sh" class="example-form" method="post">
+  <select class="display" name="hostname">
+  <option value="localhost">LocalHost</option>
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">	Run Discovery</button>
+</form>
+</mat-card-content>
+</mat-card>
+</mat-tab>
+<mat-tab label="JMeter">
+<h4 mat-subheader>Playbook For Installing JMeter</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-jmeter"></div>
+<mat-card-title>Install JMeter</mat-card-title>
+<mat-card-subtitle>Choose HostName and Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/jmeter.sh" class="example-form" method="post">
+  <select class="display" name="hostname">
+  <option value="localhost">LocalHost</option>
+  <option value="linux01">Linux01</option>
+  <option value="linux02">Linux02</option>
+  <option value="linux03">Linux03</option>
+  <option value="linux04">Linux04</option>
+  </select>
+ 
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password">
+	<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit" value="call">	Run Discovery</button>
+</form>
+</mat-card-content>
+</mat-card>
+</mat-tab>
+<mat-tab label="Rspec">
+<h4 mat-subheader>Playbook For Installing Rspec</h4>
+<mat-card class="example-container" >
+<mat-card-header>
+<div mat-card-avatar class="example-header-image-rspec"></div>
+<mat-card-title>Install Rspec</mat-card-title>
+<mat-card-subtitle>Choose HostName and Root password for host machine</mat-card-subtitle>
+</mat-card-header>
+<mat-card-content>
+<form action="cgi-bin/ruby.sh" class="example-form" method="post">
   <select class="display" name="hostname">
   <option value="localhost">LocalHost</option>
   <option value="linux01">Linux01</option>

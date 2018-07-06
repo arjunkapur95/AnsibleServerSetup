@@ -51,7 +51,7 @@ input.example-right-align {
   background-size: cover;
 }
 .example-header-image-appium {
-  background-image: url('https://www.zaizi.com/sites/default/files/appium_banner.png');
+  background-image: url('https://www.perfecto.io/wp-content/uploads/2017/12/appium-and-perfecto.png');
   background-size: cover;
 }
 .example-header-image-selenium {
@@ -63,7 +63,15 @@ input.example-right-align {
  background-size: cover;
 }
 .example-header-image-fitnesse {
- background-image: url('https://camo.githubusercontent.com/87cccfa246f5909edeb62e2a7197cd24caa34b9a/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3937373332302f313839373934312f35393935393765322d376330332d313165332d393464332d3764656332336339366261662e706e67');
+ background-image: url('/assets/Fitnesse.PNG');
+ background-size: cover;
+}
+.example-header-image-jmeter {
+ background-image: url('https://pbs.twimg.com/profile_images/721661302196842496/8mAJQD05_400x400.jpg') ;
+ background-size: cover;
+}
+.example-header-image-rspec {
+ background-image: url('http://rspec.info/images/logo_ogp.png');
  background-size: cover;
 }
 .display {
